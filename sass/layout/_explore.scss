@@ -1,0 +1,18 @@
+.explore{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: $color-background;
+    &__heading{
+        width: 80%;
+        margin: auto;
+        color: black;
+        font-family: $font-family-secondary;
+    }
+    &__explain{
+        font-family: $font-family-secondary;
+        font-size: 18px;
+        color: $color-grey;
+        font-weight: 200;
+    }
+}

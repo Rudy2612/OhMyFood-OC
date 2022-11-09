@@ -1,0 +1,9 @@
+.restaurants {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $color-background;
+    &__container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

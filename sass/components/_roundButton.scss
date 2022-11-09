@@ -1,0 +1,23 @@
+.roundButton{
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(#E170DB, #9E59DC);
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.276);
+    transition: 200ms;
+    cursor: pointer;
+
+    span{
+        font-family: $font-family-secondary;
+        font-weight: 500;
+        font-size: 15px;
+        color: white;
+    }
+
+    &:hover{
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(#e87be3, #a660e3);
+    }
+}

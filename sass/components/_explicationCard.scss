@@ -1,0 +1,62 @@
+.explication-card {
+    position: relative;
+    height: 70px;
+    border-radius: 20px;
+    background: $color-background;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    width: calc(100% - 10px);
+    margin-left: 10px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+
+    &__number {
+        position: absolute;
+        margin-left: -10px;
+        top: 35px;
+        transform: translate(0, -50%);
+
+        background: $color-primary;
+        width: 25px;
+
+        height: 25px;
+        text-align: center;
+        border-radius: 100px;
+
+        span {
+            line-height: 25px;
+            font-size: 14px;
+            color: white;
+            font-family: $font-family-secondary;
+        }
+    }
+    &__informations {
+        display: flex;
+        margin-left: 35px;
+        gap: 20px;
+
+        svg {
+            height: 17px;
+            fill: $color-lightgrey;
+            vertical-align: middle;
+        }
+        p {
+            margin: auto;
+            font-family: $font-family-secondary;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+
+.explication-card-active {
+    background: #f5edff;
+    svg {
+        fill: $color-primary;
+    }
+}
