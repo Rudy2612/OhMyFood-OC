@@ -3,19 +3,19 @@
 
 // Base
 @import "./base/reset";
+@import "./base/typography";
 
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/location";
-@import "./layout/explore";
-@import "./layout/explication";
-@import "./layout/restaurants";
+@import "./layout/section";
+
 
 // Component
 @import "./components/roundButton";
 @import "./components/explicationCard";
 @import "./components/restaurantCard";
+@import "./components/location";
 
 // Pages
 @import "./pages/home";

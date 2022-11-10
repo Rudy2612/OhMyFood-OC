@@ -2,6 +2,23 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #404040;
+  font-weight: 200;
+}
+
 .header {
   height: 60px;
   background: white;
@@ -49,68 +66,17 @@ body {
   color: white;
 }
 
-.location {
-  background: #eaeaea;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.location__containerGrid {
-  display: flex;
-  gap: 15px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.location__containerGrid svg {
-  display: block;
-  height: 18px;
-  fill: #404040;
-}
-.location__containerGrid span {
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #404040;
-}
-
-.explore {
+section.align {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+section.grey-bg {
   background: #F7F7F7;
-}
-.explore__heading {
-  width: 80%;
-  margin: auto;
-  color: black;
-  font-family: "Roboto", sans-serif;
-}
-.explore__explain {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #404040;
-  font-weight: 200;
-}
-
-.explication {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.explication__container {
-  width: 90%;
-  margin-left: 5%;
-}
-
-.restaurants {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: #F7F7F7;
-}
-.restaurants__container {
-  width: 90%;
-  margin-left: 5%;
 }
 
 .roundButton {
@@ -123,11 +89,9 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.276);
   transition: 200ms;
   cursor: pointer;
-}
-.roundButton span {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1rem;
   color: white;
 }
 .roundButton:hover {
@@ -251,7 +215,27 @@ body {
   width: 22px;
 }
 
-.title-section {
+.location {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+  height: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eaeaea;
+}
+.location svg {
+  display: block;
+  height: 18px;
+  fill: #404040;
+}
+.location input {
+  display: block;
+  width: 110px;
+  background: none;
+  border: none;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
+  color: #404040;
 }/*# sourceMappingURL=main.min.css.map */

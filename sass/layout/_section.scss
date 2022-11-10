@@ -1,0 +1,15 @@
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &.align{
+        text-align: center;
+    }
+
+    &.grey-bg{
+        background: $color-background;
+    }
+}
