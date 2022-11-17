@@ -1,12 +1,17 @@
 .header {
     height: 60px;
     background: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
     align-items: center;
     justify-content: center;
     &__logo {
         display: block;
         width: 150px;
         margin: auto;
+    }
+    &__arrow {
+        width: 25px;
+        margin-left: 25px;
     }
 }
