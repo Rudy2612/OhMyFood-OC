@@ -1,0 +1,50 @@
+.menu{
+
+    background: #F7F7F7;
+
+    &__banner{
+        height: 250px;
+        width: 100%;
+    }
+
+    &__container{
+        transform: translate(0, -40px);
+        width: calc(100% - 40px);
+        border-radius: 30px 30px 0 0;
+        background: #F7F7F7;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+
+    &__title:after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin-top: 2px;
+        background: #99E2D0;
+    }
+
+
+}
+
+.resto-info{
+    @include displayFlex($justifyContent: space-between);
+
+    &__title{
+        display: inline-block;
+        font-family: $font-family-primary;
+        margin: 0;
+    }
+    &__heart{
+        width: 25px;
+        height: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

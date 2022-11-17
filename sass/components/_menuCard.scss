@@ -1,0 +1,91 @@
+.menu-card {
+    background: white;
+    height: 68px;
+    border-radius: 20px;
+    position: relative;
+
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    overflow: hidden;
+    @include displayFlex($justifyContent: "");
+
+    &__informations {
+        width: 80%;
+        margin-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+        h3 {
+            font-family: $font-family-secondary;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0;
+            padding-bottom: 3px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        p {
+            font-family: $font-family-secondary;
+            font-size: 1rem;
+            margin: 0;
+            padding-top: 3px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &__price {
+        width: 20%;
+        font-family: $font-family-secondary;
+        font-size: 1rem;
+        font-weight: 500;
+
+        margin: 0;
+        display: block;
+        padding-top: 29px;
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 68px;
+        overflow: hidden;
+        background: #99E2D0;
+        height: 100px;
+
+        margin-right: -68px;
+
+        transition: 500ms;
+
+        svg{
+            width: 22px;
+            fill: white;
+        }
+    }
+
+    &:hover {
+        .menu-card__check {
+            margin-right: 0px;
+        }
+
+        .menu-card__check svg{
+            animation: rotate 500ms linear;
+        }
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
