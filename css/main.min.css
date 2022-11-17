@@ -89,8 +89,8 @@ section.grey-bg {
   border-radius: 100px;
   border: none;
   background: linear-gradient(#E170DB, #9E59DC);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.276);
   transition: 200ms;
   cursor: pointer;
@@ -98,6 +98,9 @@ section.grey-bg {
   font-weight: 500;
   font-size: 1rem;
   color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .roundButton:hover {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
