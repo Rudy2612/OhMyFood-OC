@@ -103,7 +103,7 @@ section.grey-bg {
   margin-right: auto;
 }
 .roundButton:hover {
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
   background: linear-gradient(#e87be3, #a660e3);
 }
 
