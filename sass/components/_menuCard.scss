@@ -8,7 +8,19 @@
     cursor: pointer;
 
     overflow: hidden;
-    @include displayFlex($justifyContent: "");
+
+    @include displayFlex($justifyContent: none);
+    opacity: 0;
+
+    animation: apparition 500ms;
+    animation-fill-mode: forwards;
+
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 200ms * $i;
+        }
+    }
+
 
     &__informations {
         width: 80%;
@@ -87,5 +99,21 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes apparition {
+    0%{
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
