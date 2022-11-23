@@ -1,0 +1,21 @@
+.explication-grid {
+    @include respondTo(sm) {
+        display: block;
+    }
+    @include respondTo(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.restaurant-grid {
+    @include respondTo(sm) {
+        display: block;
+    }
+    @include respondTo(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}

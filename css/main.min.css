@@ -1,5 +1,12 @@
+/* Default breakpoints */
+/* Mixin: Media queries */
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -258,13 +265,51 @@ section.grey-bg {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: "";
+  justify-content: inherit;
+  opacity: 0;
+  animation: apparition 500ms;
+  animation-fill-mode: forwards;
+}
+.menu-card--1 {
+  animation-delay: 200ms;
+}
+.menu-card--2 {
+  animation-delay: 400ms;
+}
+.menu-card--3 {
+  animation-delay: 600ms;
+}
+.menu-card--4 {
+  animation-delay: 800ms;
+}
+.menu-card--5 {
+  animation-delay: 1000ms;
+}
+.menu-card--6 {
+  animation-delay: 1200ms;
+}
+.menu-card--7 {
+  animation-delay: 1400ms;
+}
+.menu-card--8 {
+  animation-delay: 1600ms;
+}
+.menu-card--9 {
+  animation-delay: 1800ms;
+}
+.menu-card--10 {
+  animation-delay: 2000ms;
 }
 .menu-card__informations {
   width: 80%;
   margin-left: 15px;
   padding-right: 15px;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .menu-card__informations {
+    width: 90%;
+  }
 }
 .menu-card__informations h3 {
   font-family: "Roboto", sans-serif;
@@ -293,6 +338,11 @@ section.grey-bg {
   margin: 0;
   display: block;
   padding-top: 29px;
+}
+@media (min-width: 768px) {
+  .menu-card__price {
+    width: 10%;
+  }
 }
 .menu-card__check {
   display: flex;
@@ -327,6 +377,19 @@ section.grey-bg {
     transform: rotate(360deg);
   }
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 .spiner {
   position: fixed;
   width: 100%;
@@ -340,7 +403,7 @@ section.grey-bg {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  animation: displaying linear 3s;
+  animation: displaying linear 2s;
 }
 .spiner svg {
   width: 50px;
@@ -373,10 +436,46 @@ section.grey-bg {
     opacity: 0;
   }
 }
+.heart-container {
+  display: flex;
+}
+
+.heart {
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  transition: 500ms;
+}
+.heart:hover ~ .heart-fill {
+  fill: #FF79DA;
+  animation: remplissage 500ms;
+}
+.heart:hover {
+  fill: #FF79DA;
+}
+
+.heart-fill {
+  fill: none;
+  position: absolute;
+  z-index: 0;
+  width: 25px;
+  height: 25px;
+  transform-origin: bottom;
+}
+
+@keyframes remplissage {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu {
   background: #F7F7F7;
 }
 .menu__banner {
+  object-fit: cover;
   height: 250px;
   width: 100%;
 }
@@ -385,6 +484,20 @@ section.grey-bg {
   width: calc(100% - 40px);
   border-radius: 30px 30px 0 0;
   background: #F7F7F7;
+}
+@media (min-width: 768px) {
+  .menu__container {
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media (min-width: 1025px) {
+  .menu__container {
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 }
 .menu__title {
   text-transform: uppercase;
@@ -411,9 +524,29 @@ section.grey-bg {
   font-family: "Shrikhand", cursive;
   margin: 0;
 }
-.resto-info__heart {
-  width: 25px;
-  height: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+@media (min-width: 335px) {
+  .explication-grid {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .explication-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 335px) {
+  .restaurant-grid {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.min.css.map */

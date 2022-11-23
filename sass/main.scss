@@ -1,6 +1,7 @@
 // Abstracts
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./abstracts/responsive";
 
 // Base
 @import "./base/reset";
@@ -19,6 +20,8 @@
 @import "./components/location";
 @import "./components/menuCard";
 @import "./components/spiner";
+@import "./components/heart";
 
 // Pages
 @import "./pages/menu";
+@import "./pages/index";
